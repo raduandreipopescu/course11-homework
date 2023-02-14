@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class PersonUtil {
+public class PersonUtils {
     public static List<String> getPersonNames(List<Person> persons) {
         List<String> results = new ArrayList<>();
         for (Person person : persons) {
