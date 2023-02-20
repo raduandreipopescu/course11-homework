@@ -20,10 +20,10 @@ public class EmployeeService {
         Map<String, List<Person>> results = new HashMap<>();
         for (Employee employee : employees) {
             if (results.containsKey(employee.getCompany())) {
-                results.get(employee.getCompany()).add(new Person(employee.getName(), employee.getAge(), employee.getHairColour()));
+                results.get(employee.getCompany()).add(employee);
             } else {
                 List<Person> values = new ArrayList<>();
-                values.add(new Person(employee.getName(), employee.getAge(), employee.getHairColour()));
+                values.add(employee);
                 results.put(employee.getCompany(), values);
             }
         }
