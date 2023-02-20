@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class CarShopUtils {
+public class CarShopService {
 
     public static Map<String, Integer> mapCarNameToNumberOfCars(List<Car> cars) {
         Map<String, Integer> results = new HashMap<>();

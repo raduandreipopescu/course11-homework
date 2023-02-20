@@ -10,9 +10,9 @@ public class Main {
         myCarShop.getCarsInShop().add(4, new Car("Oltcit", 30, 15000, 600));
 
         System.out.println(myCarShop);
-        System.out.println("5.1 Map from car name to number of cars: \n" + CarShopUtils.mapCarNameToNumberOfCars(myCarShop.getCarsInShop()));
-        System.out.println("5.2 Map from car name to number of km: \n" + CarShopUtils.mapCarNameToNumberOfKm(myCarShop.getCarsInShop()));
-        System.out.println("5.3 Map from km range to car list: \n" + CarShopUtils.mapKmRangeToListOfCars(myCarShop.getCarsInShop()));
-        System.out.println("5.4 Map from price range to car list: \n" + CarShopUtils.mapPriceRangeToListOfCars(myCarShop.getCarsInShop()));
+        System.out.println("5.1 Map from car name to number of cars: \n" + CarShopService.mapCarNameToNumberOfCars(myCarShop.getCarsInShop()));
+        System.out.println("5.2 Map from car name to number of km: \n" + CarShopService.mapCarNameToNumberOfKm(myCarShop.getCarsInShop()));
+        System.out.println("5.3 Map from km range to car list: \n" + CarShopService.mapKmRangeToListOfCars(myCarShop.getCarsInShop()));
+        System.out.println("5.4 Map from price range to car list: \n" + CarShopService.mapPriceRangeToListOfCars(myCarShop.getCarsInShop()));
     }
 }

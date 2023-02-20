@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class EmployeeUtils {
+public class EmployeeService {
     public static List<Person> getPersonsWithHigherSalary(List<Employee> employees, int targetSalary) {
         List<Person> results = new ArrayList<>();
         for (Employee employee : employees) {
