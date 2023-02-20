@@ -35,10 +35,10 @@ public class CarShopUtils {
         Map<KmRange, List<Car>> results = new HashMap<>();
         for (Car car : cars) {
             if (results.containsKey(determineKmRangeFromCar(car.km()))) {
-                results.get(determineKmRangeFromCar(car.km())).add(new Car(car.name(), car.age(), car.km(), car.price()));
+                results.get(determineKmRangeFromCar(car.km())).add(car);
             } else {
                 List<Car> values = new ArrayList<>();
-                values.add(new Car(car.name(), car.age(), car.km(), car.price()));
+                values.add(car);
                 results.put(determineKmRangeFromCar(car.km()), values);
             }
         }
@@ -49,10 +49,10 @@ public class CarShopUtils {
         Map<PriceRange, List<Car>> results = new HashMap<>();
         for (Car car : cars) {
             if (results.containsKey(determinePriceRangeFromCar(car.price()))) {
-                results.get(determinePriceRangeFromCar(car.price())).add(new Car(car.name(), car.age(), car.km(), car.price()));
+                results.get(determinePriceRangeFromCar(car.price())).add(car);
             } else {
                 List<Car> values = new ArrayList<>();
-                values.add(new Car(car.name(), car.age(), car.km(), car.price()));
+                values.add(car);
                 results.put(determinePriceRangeFromCar(car.price()), values);
             }
         }
